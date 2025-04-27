@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+<OfficeApp xmlns="http://schemas.microsoft.com/office/taskpaneappversion/1.5"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="TaskPaneApp">
   <Id>12345678-9abc-def0-1234-56789abcdef0</Id>
@@ -7,17 +7,16 @@
   <ProviderName>Lavasa AI</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Lavasa AI Presentation Generator"/>
-  <Description DefaultValue="Generate stunning PowerPoint presentations using ChatGPT & DALL-E."/>
+  <Description DefaultValue="Generate stunning PowerPoint presentations using ChatGPT &amp; DALL-E."/>
   <IconUrl DefaultValue="https://via.placeholder.com/32"/>
   <HighResolutionIconUrl DefaultValue="https://via.placeholder.com/64"/>
-  <SupportUrl DefaultValue="https://yourcompanysupporturl.com"/>
-  <AppDomains>
-  </AppDomains>
+  <SupportUrl DefaultValue="https://lavasa.vn"/>
+  <AppDomains/>
   <Hosts>
     <Host Name="Presentation"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/>
+    <SourceLocation DefaultValue="https://lamduong-lvs.github.io/lavasa-ai-addin/taskpane.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
 </OfficeApp>
