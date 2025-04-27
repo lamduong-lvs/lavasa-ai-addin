@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    padding: 10px;
+}
+.container {
+    padding: 10px;
+}
+textarea, select, input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1086ad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0e6d8d;
+}
+.options {
+    margin-bottom: 10px;
+}
+#history {
+    margin-top: 20px;
+}
+#historyList {
+    list-style: none;
+    padding: 0;
+}
+#historyList li {
+    background: #eee;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#loading {
+    margin-top: 10px;
+    font-weight: bold;
+}

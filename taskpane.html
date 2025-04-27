@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lavasa AI Presentation</title>
+    <link rel="stylesheet" href="taskpane.css" />
+    <script src="taskpane.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Lavasa AI Generator</h1>
+        <textarea id="prompt" placeholder="Nhập nội dung yêu cầu..." rows="4"></textarea>
+
+        <select id="style">
+            <option value="Business">Business</option>
+            <option value="Casual">Casual</option>
+            <option value="Funny">Funny</option>
+        </select>
+
+        <select id="model">
+            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+            <option value="gpt-4">GPT-4</option>
+            <option value="gpt-4o">GPT-4o</option>
+        </select>
+
+        <input type="text" id="apiKey" placeholder="Nhập API Key..." />
+
+        <div class="options">
+            <label><input type="checkbox" id="enableImage"> Gợi ý hình ảnh (DALL-E)</label>
+            <label><input type="checkbox" id="enableAnimation"> Thêm Animation</label>
+            <label><input type="checkbox" id="enableChart"> Tự tạo Chart</label>
+            <label><input type="checkbox" id="enableTimeline"> Tự tạo Timeline</label>
+            <label><input type="checkbox" id="enableWatermark"> Thêm Watermark</label>
+        </div>
+
+        <button id="generateBtn">Generate Presentation</button>
+
+        <div id="history">
+            <h3>Lịch sử yêu cầu</h3>
+            <ul id="historyList"></ul>
+            <button id="clearHistoryBtn">Xóa lịch sử</button>
+        </div>
+
+        <div id="loading" style="display:none;">Đang tạo nội dung...</div>
+    </div>
+</body>
+</html>
